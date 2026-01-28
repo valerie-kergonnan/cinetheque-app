@@ -66,7 +66,7 @@ const Home = () => {
                     </p>
 
                     <button 
-                        onClick={() => navigate(`/recipe/${heroMovie.id}`)} // <-- CORRECTION ICI
+                        onClick={() => navigate(`/movie/${heroMovie.id}`)} // <-- CORRECTION ICI
                         style={{
                             padding: '12px 25px',
                             width: 'fit-content',

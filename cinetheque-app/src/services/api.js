@@ -12,6 +12,11 @@ const api = axios.create({
     },
 });
 
+export const getSimilarMovies = async (movieId) => {
+    const response = await api.get(`/movie/${movieId}/similar?language=fr-FR&page=1`);
+   return response.data.results;
+};
+
 export const getSeries = async (page = 1) => {
     const response = await api.get('/tv/popular', {
         params: { page: page}
